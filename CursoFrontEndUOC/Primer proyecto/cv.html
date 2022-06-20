@@ -5,47 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
     <header>
-        <h1 id="titulo">Currículum vitae</h1>
-                                           
-
+        <img id="home" src="imatges/casa.png" alt="home" width="40" height="48" >
+        <span>
+            <a href="index.html">Inici</a>
+            <a href="cv.html">C.V.</a>
+            <a href="contacte.html">Contacte</a>
+        
+        </span>
+   
     </header>
+    
+    <section class="tit">
+        <h1 id="titulo">Currículum vitae</h1>
+    </section>
 
-    <section>
-        <h2 id="indice">Índice</h2>
-        <a href="#iPersonal">Ir a Información personal</a>
-        <a href="#idiomas">Ir a Idiomas</a>
-        <a href="#iAcademica">Ir a Información Académica</a>
-        <a href="#iLaboral">Ir a Información Laboral</a>
+    <section id="index">
+
+        <h2 id="Index">Index</h2>
+        <div id="enllaç">
+            <img src="imatges/arroba.png" alt="@" width="20">
+            <a href="#iPersonal">Dades personals</a>
+            <img src="imatges/idioma.png" alt="@" width="20">
+            <a href="#idiomas">Idiomes</a>
+            <img src="imatges/estudios.png" alt="@" width="20">
+            <a href="#iAcademica">Estudis</a>
+            <img src="imatges/pantalla.png" alt="@" width="20">
+            <a href="#iLaboral">Laboral</a>
+        </div>
 
 
     </section>
 
-    <section>
+    <section id="pers">
+        
         <h2 id="iPersonal">Información personal</h2>
-        <span id="def">Nombre:</span> <span> Noel Ortega</span>
-        <br>
-        <br>
-        <span id="def">Dirección:</span> <span> C/ Jacinto Verdaguer s/n 09452 Toledo</span>
-        <br>
-        <br>
-        <span id="def">DNI:</span> <span> 48556892-F</span>
-        <br>
-        <br>
-        <span id="def">Teléfono:</span> <span> 666 77 88 99 11</span>
-        <br>
-        <br>
-        <span id="def">Correo electrónico:</span> <span> nortegaes@uoc.edu</span>
-        <br>
-        <br>
+        <div class="conten">
+            <span id="sectper">
+                <span id="def">Nombre:</span> <span> Noel Ortega</span>
+                <br>
+                <br>
+                <span id="def">Dirección:</span> <span> C/ Jacinto Verdaguer s/n 09452 Toledo</span>
+                <br>
+                <br>
+                <span id="def">DNI:</span> <span> 48556892-F</span>
+                <br>
+                <br>
+                <span id="def">Teléfono:</span> <span> 666 77 88 99 11</span>
+                <br>
+                <br>
+                <span id="def">Correo electrónico:</span> <span> nortegaes@uoc.edu</span>
+                
+            
+                
+            </span>
+        </div>
+        <div class="conten1"><img id="smile" src="imatges/sonrisa.png" alt="smile" width="200px"></div>
     </section>
 
-    <section>
+    <section id="tabla">
         <h2 id="idiomas">Idiomas</h2>
 
-        <table class="tabla">
+        <table class="table">
 
             <tr>
           
@@ -107,11 +131,11 @@
 
     </section>
 
-    <section>
+    <section id="estudis">
 
         <h2 id="iAcademica">Información Académica</h2>
 
-        <ul>
+        <ul class="lista">
             <li><strong>Bachillerato tecnológico</strong></li>
             <p>Instituto Joan Brudieu.</p>
 
@@ -126,11 +150,11 @@
         
     </section>
 
-    <section>
+    <section id="lab">
 
         <h2 id="iLaboral">Información Laboral</h2>
 
-        <ul>
+        <ul class="lista">
             <li><strong>Soporte IT a grupo CREVER (Tarragona, 2009 - 2011)</strong></li>
             <p>Trabajos de soporte IT al grupo de investigación CREVER de la URV. Soporte a los usuarios, desarrollo,<br> instalación y mantenimento de software, gestión del servidor interno y desarrollo de páginas web.</p>
             <li><strong>Desarrollo backend en G.Software (Reus, 2011-2013)</strong></li>
@@ -138,7 +162,9 @@
         </ul>
     </section>
 
-    <footer></footer>
+    <footer>
+        <span><img class="icol" src="imatges/camera-outline.svg" alt="cam" width="60px"><img class="icol" src="imatges/logo-linkedin.svg" alt="lin" width="60px"><img class="icol" src="imatges/logo-twitter.svg" alt="twiter" width="60px";></span>
+    </footer>
     
 </body>
 </html>
