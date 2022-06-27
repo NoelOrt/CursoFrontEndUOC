@@ -3,30 +3,30 @@ html{
     width: 1440px;
 }
 
-@media only screen and (min-width: 0px) and (max-width:600px) {
+@media only screen and (min-width: 0px) and (max-width:650px) {
     html {
-        width: 1280px;
+        width: 600px;
     }
  
 
 }
   
 
-@media only screen and (min-width: 601px) and (max-width:768px) {
+@media only screen and (min-width: 651px) and (max-width:800px) {
     html {
-        width: 1280px;
+        width: 760px;
     }
     footer{
-        width: 1280px;
+        width: 760px;
     }
 }
   
-@media only screen and (min-width: 769px) and (max-width:992px) {
+@media only screen and (min-width: 801px) and (max-width:992px) {
     html {
-        width: 1280px;
+        width: 990px;
     }
     footer{
-        width: 1280px; 
+        width: 990px; 
     }
 }
 
@@ -182,8 +182,8 @@ align-items: center;
 padding: 0px;
 gap: 48px;
 
-position: absolute;
-width: 1440px;
+position: relative;
+
 height: 128px;
 left: 0px;
 top: 2757px;
@@ -205,8 +205,10 @@ footer span {
     align-items:center;
     gap: 60px;
 }
- 
+
+
 .cos{
+    margin: 150px 0;
     background-color: white;
     
 }
@@ -228,7 +230,7 @@ footer span {
 }
 
 #present{
-    width: 800px;
+    width: 50%;
     height: 323px;
     padding: 6rem 0 0;
     font-family: 'Inter';
@@ -244,8 +246,8 @@ footer span {
 }
 
 #presentImg{
-    width: 400px;
-    height: 266.7px;
+    width: 40%;
+    
 
     background: url(foto);
 
@@ -261,7 +263,7 @@ flex-direction: row;
 justify-content: space-between;
 align-items: center;
 padding: 0px;
-gap: 99px;
+gap: 9px;
 
 width: 100%;
 height: 323px;
@@ -275,9 +277,9 @@ flex-grow: 0;
 }
 
 #project{
-position: absolute;
+
 width: 358px;
-height: 67px;
+height: 150px;
 left: 541px;
 top: 911px;
 
@@ -307,7 +309,7 @@ align-items: center;
 padding: 0px 0px 24px;
 gap: 24px;
 
-position: absolute;
+
 width: 340px;
 height: 451.97px;
 left: 938px;
@@ -367,7 +369,7 @@ align-items: center;
 padding: 0px 0px 24px;
 gap: 24px;
     
-position: absolute;
+
 width: 340px;
 height: 451.97px;
 left: 550px;
@@ -388,7 +390,7 @@ align-items: center;
 padding: 0px 0px 24px;
 gap: 24px;
     
-position: absolute;
+
 width: 340px;
 height: 451.97px;
 left: 162px;
@@ -398,10 +400,17 @@ border: 1px solid #000000;
 box-shadow: 0px 0px 8px #222222;
 border-radius: 20px;
 }
+#articles{
+    display: flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    gap: 60px;
+}
+ 
 
 #experience{
-position: absolute;
-width: 1440px;
+margin: 150px 0;
 height: 600px;
 left: 0px;
 top: 1549px;
@@ -437,8 +446,7 @@ align-items: center;
 padding: 0px 64px;
 
 
-position: absolute;
-width: 1280px;
+
 height: 415.94px;
 left: 0px;
 top: 140.99px;
@@ -447,7 +455,7 @@ background: black;
 
 }
 #titAfi{
-    position: absolute;
+    
 width: 309px;
 height: 39px;
 left: 547px;
@@ -484,8 +492,7 @@ align-items: center;
 padding: 24px 48px;
 gap: 48px;
 
-position: absolute;
-width: 1218px;
+
 height: 144px;
 left: 111px;
 top: 2303px;
@@ -567,8 +574,7 @@ align-items: center;
 padding: 24px 48px;
 gap: 48px;
 
-position: absolute;
-width: 1218px;
+
 height: 144px;
 left: 111px;
 top: 2447px;
