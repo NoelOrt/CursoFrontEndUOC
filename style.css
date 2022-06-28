@@ -7,6 +7,9 @@ html{
     html {
         width: 600px;
     }
+    footer{
+        width: 600px; 
+    }
  
 
 }
@@ -29,6 +32,15 @@ html{
         width: 990px; 
     }
 }
+@media only screen and (min-width: 993px) and (max-width:1200px) {
+    html {
+        width: 1100px;
+    }
+    footer{
+        width: 1100px; 
+    }
+}
+
 
 
 
@@ -400,21 +412,82 @@ border: 1px solid #000000;
 box-shadow: 0px 0px 8px #222222;
 border-radius: 20px;
 }
-#articles{
-    display: flex;
-    flex-direction:row;
-    justify-content:center;
-    align-items:center;
-    gap: 60px;
-}
+
+@media only screen and (min-width: 0px) and (max-width:991px) {
+    #articles{
+        width: auto;
+        display: flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        gap: 60px;
+    }
+    #sectors{
+        /* Auto layout */
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 64px;
+        
+        
+        
+        height: 415.94px;
+        left: 0px;
+        top: 140.99px;
+        
+        background: black;
+        
+    }
+    #experience{
+        margin: 150px 0;
+        height: 1300px;
+        left: 0px;
+        top: 1549px;
+        background-color: black;
  
 
-#experience{
-margin: 150px 0;
-height: 600px;
-left: 0px;
-top: 1549px;
-background-color: black;
+    }
+}
+@media only screen and (min-width: 1000px)  {
+    #articles{
+        width: auto;
+        display: flex;
+        flex-direction:row;
+        justify-content:center;
+        align-items:center;
+        gap: 3%;
+    }
+    #sectors{
+        /* Auto layout */
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 10px;
+        
+        
+        
+        height: 415.94px;
+        left: 0px;
+        top: 140.99px;
+        
+        background: black;
+        
+    }
+    #experience{
+        margin: 150px 0;
+        height: 600px;
+        left: 0px;
+        top: 1549px;
+        background-color: black;
+        
+}
+
+
+
 
 }
 #titexp{
@@ -436,24 +509,7 @@ color: white;
 
 
 }
-#sectors{
-/* Auto layout */
 
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-items: center;
-padding: 0px 64px;
-
-
-
-height: 415.94px;
-left: 0px;
-top: 140.99px;
-
-background: black;
-
-}
 #titAfi{
     
 width: 309px;
@@ -481,21 +537,73 @@ color: #000000;
 
 
 
+@media only screen and (min-width: 1300px)  {
+    #afi{
+        /* Auto layout */
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 48px;
+    gap: 48px;
+    
+    
+    height: 144px;
+    left: 111px;
+    top: 2303px;
+    }
+    #afi2{
+        /* Auto layout */
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 48px;
+    gap: 48px;
+    
+    
+    height: 144px;
+    left: 111px;
+    top: 2447px;
+    }
 
-#afi{
-    /* Auto layout */
 
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 24px 48px;
-gap: 48px;
+}
+@media only screen and (max-width: 1300px)  {
+    #afi{
+        /* Auto layout */
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 48px;
+    gap: 48px;
+    
+    
+    height: 144px;
+    left: 111px;
+    top: 2303px;
+    margin: 0 0 10rem;
+    }
+    #afi2{
+        /* Auto layout */
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 48px;
+    gap: 48px;
+    
+    
+    height: 144px;
+    left: 111px;
+    top: 2447px;
+    }
 
-
-height: 144px;
-left: 111px;
-top: 2303px;
 
 }
 #art4{
@@ -564,20 +672,27 @@ flex: none;
 order: 2;
 flex-grow: 0;
 }
-#afi2{
+
+#art7{
     /* Auto layout */
 
 display: flex;
 flex-direction: row;
-justify-content: center;
 align-items: center;
-padding: 24px 48px;
-gap: 48px;
+padding: 24px;
+gap: 93px;
 
+width: 342px;
+height: 80px;
 
-height: 144px;
-left: 111px;
-top: 2447px;
+background: #D9D9D9;
+border-radius: 6px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 2;
+flex-grow: 0;
 }
 #artp{
     width: 153px;
