@@ -1,8 +1,12 @@
 html{
     background-color: white;
     width: 1440px;
+    /* no se li acostuma a fixar una amplada al tag HTML, per defecte agafa el 100% de l'amplada de la pantalla del navegador */
 }
+/* si no es fixa una mida de l'ample de pantalla, o se li dona un valor del 100%, o 100vw (100% de l'amplada de la pantalla), no cal anar ajustant
+la mida per cada mediaquery, sino que s'ajustarà automàticament */
 
+/* en aquest cas es podria aplicar nomes max-width, ja que el mínim estaria implicit; s'aplicataria qualsevo mida inferior a 650px */
 @media only screen and (min-width: 0px) and (max-width:650px) {
     html {
         width: 600px;
@@ -10,6 +14,9 @@ html{
     footer{
         width: 600px; 
     }
+    /* si footer té un width del 100% (del seu element pare) o 100vw (100% de la mida de la pantalla) s'ajusta automàticament a qualsevol mida de pantalla.
+    Inclús si es fa així, no caldria posar-ho en una mediaquery, i s'aplicaria sempre. Només caldria tocar el footer en una mediaquery si se li volgués canviar
+    alguna altra propietat específica per alguna mida en concret (per exemple, en pantalles petites, que el contingut estigui en vertical en comptes de en línia */
  
 
 }
@@ -32,6 +39,8 @@ html{
         width: 990px; 
     }
 }
+/* La mida màxima no s'hauria de fixar, ja que hi poden haver pantalles més grans.
+Es podria deixar amb un min-width: 993px, i totes les pantalles més grans que aquesta mida, aplicar els estils */
 @media only screen and (min-width: 993px) and (max-width:1200px) {
     html {
         width: 1100px;
@@ -44,7 +53,16 @@ html{
 
 
 
-
+/*
+En CSS, tot i que es poden "atacar" els elements per ID (#elmeuid), és més habitual treballar amb classes (.lamevaclasse), ja que d'aquesta manera
+es poden reaprofitar estils. Per exemple, si a tots els botons se'ls hi vol donar el mateix estil, se li pot possar la mateixa classe a tots els botons.
+I així també podem reservar el treballa amb ID per JavaScript, i amb classes per maquetació.
+Els ID són molt específics, pot anar bé treballar-hi amb CSS per elements molt concrets, però en general és millor treballar amb classes.
+De manera similar, atacar directament als tags HTML, tot i que es pot fer, pot ser "perillós". Per exemple, si volem que tots els títols h2 d'una secció de la home
+siguin d'una manera, però a la resta de pàgines volem donar-los un altre estil, si fem: section h2, aixó s'aplicarà a tots els titols de totes les pàgines. 
+Si utilitzem classe, podriem fer: section.home h2 ( .home h2 ), només s'aplicarien a la home. Així es pot ser més específic, atacant a la classe pare i després ja 
+es poden atacar els descendents com a classe o tag.
+*/
    
 
 header {
@@ -321,11 +339,14 @@ align-items: center;
 padding: 0px 0px 24px;
 gap: 24px;
 
-
 width: 340px;
 height: 451.97px;
 left: 938px;
 top: 1026px;
+/* 
+Perquè s'apliquin les propietats top,left,right,bottom, també s'ha d'aplicar la propietat position amb valor relative o absolute.
+Igualment, com que s'està utilitzant flexbox correctament, els elements ja queden ben posicionats.
+*/
 
 border: 1px solid #000000;
 
